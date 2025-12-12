@@ -63,10 +63,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NileshJachak20/multibank_test.git"
+    "url": "git+https://github.com/CaffeinBonafide/multibank_test.git"
   },
   "bugs": {
-    "url": "https://github.com/NileshJachak20/multibank_test/issues"
+    "url": "https://github.com/CaffeinBonafide/multibank_test/issues"
   },
-  "homepage": "https://github.com/NileshJachak20/multibank_test#readme"
+  "homepage": "https://github.com/CaffeinBonafide/multibank_test#readme"
 }

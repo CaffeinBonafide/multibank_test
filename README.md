@@ -28,6 +28,6 @@ npm run cy:run:chrome
 
 
 ## Repo
-GitHub: https://github.com/NileshJachak20/multibank_test
+GitHub: https://github.com/CaffeinBonafide/multibank_test
 │   ├── workflows/
 
