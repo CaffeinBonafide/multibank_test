@@ -1,0 +1,46 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Cypress artifacts
+cypress/screenshots/
+cypress/videos/
+reports/
+reports/**
+cypress/config/.jsons/
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Environment/config
+.env
+.env.*
+
+# Editor/project files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# OS/OneDrive metadata
+desktop.ini
+~$*
