@@ -109,11 +109,11 @@ Cypress.Commands.add('getStable', (selector: string, stableMs = 200, timeout = 5
     const r = el.getBoundingClientRect();
     return [r.top, r.left, r.width, r.height].map((n) => Math.round(n));
   }
-  function check() {
-    return cy.get(selector, { log: false }).then(($el) => {
+  function check(): Cypress.Chainable<JQuery<HTMLElement>> {
+    return cy.get(selector, { log: false }).then(($el): Cypress.Chainable<JQuery<HTMLElement>> => {
       const el = $el[0] as HTMLElement;
       const a = rect(el);
-      return Cypress.Promise.delay(stableMs).then(() => {
+      return cy.wait(stableMs, { log: false }).then((): Cypress.Chainable<JQuery<HTMLElement>> => {
         const b = rect(el);
         const same = a.join(',') === b.join(',');
         if (same) return cy.wrap($el);
