@@ -16,6 +16,8 @@
     "test:firefox": "npm run cy:run:firefox",
     "test:edge": "npm run cy:run:edge",
     "test:all-browsers": "npm run test:chrome && npm run test:firefox && npm run test:edge",
+    "charfreq": "node scripts/charfreq.js",
+    "charfreq:test": "node scripts/charfreq.test.js",
     "report:generate": "cypress-multi-reporters",
     "lint": "eslint cypress --ext .js,.ts",
     "lint:fix": "eslint cypress --ext .js,.ts --fix",
