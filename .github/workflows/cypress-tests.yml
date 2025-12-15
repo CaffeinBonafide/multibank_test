@@ -28,6 +28,13 @@ jobs:
       - name: Run Cypress (spec reporter)
         run: npx cypress run --config video=false
 
+      - name: Upload mochawesome report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mochawesome-report
+          path: mochawesome-report
+
       - name: Upload screenshots
         if: failure()
         uses: actions/upload-artifact@v4

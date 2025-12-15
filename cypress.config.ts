@@ -60,6 +60,7 @@ export default defineConfig({
     },
     
     setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on);
       require('@cypress/grep/src/plugin')(config);
       
       on('task', {
@@ -101,5 +102,5 @@ export default defineConfig({
     },
     specPattern: 'cypress/component/**/*.cy.{js,ts}'
   },
-    reporter: 'spec'
+    reporter: 'cypress-mochawesome-reporter'
 });
